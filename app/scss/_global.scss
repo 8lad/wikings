@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+body {
+    font-weight: 400;
+    background-color: $bg;
+    color: $white;
+    @include robotoRegular;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    padding: 0px 10px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.container-fluide {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+input,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.section-page {
+    padding: 100px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+}

@@ -1,0 +1,297 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  background-color: #0e0e0e;
+  color: #fff; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden; }
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
+body {
+  font-weight: 400;
+  background-color: #0E0E0E;
+  color: #fff;
+  font-family: "RobotoCondensed-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.container {
+  padding: 0px 10px;
+  max-width: 1220px;
+  margin: 0 auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+input,
+span {
+  margin: 0;
+  padding: 0; }
+
+.section-page {
+  padding: 100px 0; }
+
+.title {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Regular.otf") format("opentype"), url("../fonts/RobotoCondensed-Regular.svg") format("svg"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "RobotoCondensed-LightItalic";
+  src: url("../fonts/RobotoCondensed-LightItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/RobotoCondensed-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-LightItalic.otf") format("opentype"), url("../fonts/RobotoCondensed-LightItalic.svg") format("svg"), url("../fonts/RobotoCondensed-LightItalic.ttf") format("truetype"), url("../fonts/RobotoCondensed-LightItalic.woff") format("woff"), url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url("../fonts/RobotoCondensed-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Bold.otf") format("opentype"), url("../fonts/RobotoCondensed-Bold.svg") format("svg"), url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"), url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center 50px;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .header::after {
+    content: " ";
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0E0E0E), color-stop(16.53%, rgba(17, 17, 17, 0.850295)), to(rgba(32, 31, 33, 0)));
+    background: -o-linear-gradient(top, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
+    background: linear-gradient(180deg, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%); }
+  .header .menu__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px 0 58px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#111213), color-stop(43.62%, #111213), color-stop(86.33%, rgba(32, 31, 33, 0)));
+    background: -o-linear-gradient(top, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+    background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%); }
+    .header .menu__list-item {
+      padding: 0 13px; }
+    .header .menu__list-link {
+      font-size: 36px;
+      line-height: 42px;
+      -webkit-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s; }
+    .header .menu__list-link:hover {
+      color: #85CCDC;
+      text-decoration: underline; }
+    .header .menu__list-link.active {
+      color: #85CCDC;
+      text-decoration: underline; }
+
+.logo {
+  padding-top: 178px; }
+
+.about__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.about__info {
+  width: 375px;
+  margin-right: 50px;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none; }
+  .about__info-item {
+    margin-bottom: 25px;
+    color: #E5E5E5; }
+    .about__info-item span {
+      display: block; }
+
+.about__text p {
+  margin-bottom: 25px; }
+
+.video {
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  text-align: right; }
+  .video__text {
+    font-family: "RobotoCondensed-LightItalic", sans-serif;
+    font-weight: 300;
+    color: #85CCDC;
+    font-size: 72px;
+    line-height: 84px;
+    padding-top: 444px;
+    margin-bottom: 40px; }
+    .video__text span {
+      display: block;
+      padding-right: 285px; }
+  .video__btn {
+    padding-left: 112px;
+    position: relative;
+    margin-right: 230px; }
+  .video__btn::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: -40px;
+    position: absolute;
+    background-image: url(../images/youtube.svg); }
+
+.seasons__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px 75px;
+  counter-reset: number; }
+
+.seasons__item {
+  width: 350px;
+  height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.seasons__item:hover .seasons__link {
+  opacity: 1; }
+
+.seasons__item::after {
+  content: '';
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
+
+.seasons__item:hover::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(14, 14, 14, 0.8); }
+
+.seasons__item::before {
+  content: "0" counter(number);
+  counter-increment: number;
+  position: absolute;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 112px;
+  color: #600E09;
+  left: 0;
+  top: -72px;
+  z-index: -1; }
+
+.seasons__link {
+  font-size: 36px;
+  line-height: 42px;
+  padding: 12px 78px 11px;
+  background-color: #0E0E0E;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  z-index: 2; }
+
+.heroes__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
